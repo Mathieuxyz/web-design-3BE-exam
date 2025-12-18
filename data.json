@@ -1,0 +1,11 @@
+{
+  "bookings": [
+    {
+      "id": "a10b8737-4919-4a43-8ffa-f53b91842912",
+      "name": "Mathieu Franchimont",
+      "phone": "045567049443",
+      "people": 10,
+      "time": "20:40"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    develop:
+      watch:
+        - path: .
+          target: /app
+          action: sync
+        - path: package.json
+          action: rebuild
+        - path: package-lock.json
+          action: rebuild
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4000:3000"
+    environment:
+      NODE_ENV: development
+    command: npm run dev
+    
